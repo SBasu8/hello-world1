@@ -1,0 +1,26 @@
+<html>
+<head>
+<img src="img1.jpg" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() //starts after loading of page write
+{	
+$("h1").click(function(){alert("ha ha ha");});
+$("h1").css({"background-color":"blue","background-image":"url('img2.jpg')"});  //use of css
+$("h1").click(function(){$("img").attr("src","img1.jpg");});
+$("#hide").click(function(){$("img").hide(1000);});
+$("#show").click(function(){$("img").show(1000);});
+
+});
+
+</script>
+
+</head>
+<body>
+<h1 ><font color="blue">Why do you live?</font></h1>
+<button id="show"> show</button>
+<button id="hide"> hide</button>
+
+</body>
+
+</html>
